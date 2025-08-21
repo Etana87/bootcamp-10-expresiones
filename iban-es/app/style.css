@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  color: #2f3640;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #192a56;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  resize: vertical;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: #0097e6;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #40739e;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  color: #192a56;
+  margin-bottom: 10px;
+}
+
+/* FLEXBOX PARA LAS IMÁGENES */
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+#results img {
+  max-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+#results img:hover {
+  transform: scale(1.05);
+}
