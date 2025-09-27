@@ -16,7 +16,7 @@ export function normalizeIban(raw: string): string {
 }
 
 /**
- * Validación "suave" de IBAN español:
+ * Validación de IBAN español:
  * - Tras normalizar, debe cumplir ES + 22 dígitos (total 24 caracteres).
  */
 export function isWellFormedSpanishIban(raw: string): boolean {
@@ -29,9 +29,9 @@ export function isWellFormedSpanishIban(raw: string): boolean {
  * y solo en los límites correctos). También acepta la forma sin separadores.
  *
  * Formas válidas:
- *   - ESdd dddd dddd dd dddddddddd
- *   - ESdd-dddd-dddd-dd-dddddddddd
- *   - ESdddddddddddddddddddddddd  (sin separadores)
+ *   - ESXX XXXX XXXX XX XXXXXXXXX
+ *   - ESXX-XXXX-XXXX-XX-XXXXXXXXX
+ *   - ESXXXXXXXXXXXXXXXXXXXXX 
  */
 export function isWellFormedSpanishIbanStrict(raw: string): boolean {
   const s = raw.trim();

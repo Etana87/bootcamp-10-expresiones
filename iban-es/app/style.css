@@ -60,7 +60,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* FLEXBOX PARA LAS IMÁGENES */
+/* ESTILOS */
 #results {
   display: flex;
   flex-wrap: wrap;
